@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('image.PNG'); /* خلفية مكررة */
+    background-repeat: repeat;
+    background-size: 80px;
+    height: 300vh;
+}
+
+.image-container {
+    margin: 10px auto;
+}
+
+.top-image {
+    margin-left: 20px;
+    width: 100px; /* تحديد حجم الصورة العلوية بشكل صحيح */
+    height: 50px;
+}
+
+.icon-image {
+    width: 60px; /* حجم الأيقونة */
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+/* تنسيق الصور الكبيرة والصغيرة */
+.large-image {
+    display: flex; /* استخدام flex لتنسيق العنصر */
+    width: 100%; /* عرض الصورة بالكامل */
+    max-width: 80%; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 10px; /* زوايا دائرية قليلاً */
+    margin: 0 auto; /* توسيط الصورة الكبيرة */
+    margin-top: 10px;
+    padding-bottom: 10px; /* إضافة وحدة قياس */
+    justify-content: center; /* توسيط الصورة أفقيًا */
+    align-items: center; /* توسيط الصورة عموديًا (إذا كان هناك ارتفاع محدد) */
+}
+
+
+.img-fluid {
+    width: 100%; /* عرض الصورة بالكامل */
+    border-radius: 10px; /* زوايا دائرية قليلاً */
+}
+
+/* تنسيق الصفوف */
+.row {
+    display: flex;
+    flex-direction: column; /* ترتيب الصور عمودياً */
+    align-items: center; /* توسيط الصور داخل الصف */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* تنسيق الأعمدة */
+.col-9 {
+    margin-bottom: 10px; /* مسافة صغيرة بين الصور */
+}
+
+/* إضافة مساحة فارغة على الجانبين */
+.container {
+    max-width: 800px; /* عرض أقصى للعرض */
+    margin: 0 auto; /* توسيط المحتوى */
+    padding: 0px; /* إضافة مسافة فارغة على الجانبين */
+}
+
+.custom-btn {
+    margin-top: 0px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #c9c095; /* اللون الذهبي */
+    color: #000; /* لون النص */
+    padding: 5px 20px; /* تعديل الحجم لجعل الزر نحيل */
+    border-radius: 50px; /* زوايا مستديرة بالكامل */
+    text-decoration: none;
+    font-size: 14px; /* حجم النص */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0c0b0b; /* إضافة إطار داخلي */
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #e6c045ab; /* لون مختلف عند التمرير */
+}
+
+.btn-icon {
+    margin-right: 10px; /* نقل الأيقونة إلى الجهة اليمنى */
+    width: 30px; /* حجم الأيقونة */
+    height: auto;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column; /* ترتيب الأزرار عمودياً */
+    align-items: center; /* توسيط الأزرار */
+    margin-top: 20px;
+}
+.long-image {
+    margin-bottom: 1px; /* تقليل المسافة بين الصورة وأزرار التواصل الاجتماعي */
+}
